@@ -1,0 +1,293 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1280px) {
+    .top-lang {
+        padding-right:15px;
+    }
+    .top-nav li {
+        margin: 0 8px;
+    }
+    .logo {
+        max-width:400px;
+        height:180px;
+    }
+    .services .c-col {
+        padding:0 40px;
+    }
+    .services_circle {
+        padding:80px 80px 0;
+    }
+    .services_circle-additionally {
+        margin-top:15px;
+    }
+    .consultation .l-col {
+        width:50%;
+    }
+    .services {
+        padding:15px 30px;
+    }
+    .logo {
+        max-width:444px;
+        background:url("../img/logo-bg.png") no-repeat center;
+        background-size:cover;
+        left:0;
+    }
+    .logo img {
+        left:-35px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .top-nav {
+        display:none;
+        position:absolute;
+        flex-direction:column;
+        z-index:10;
+        right:0;
+        top:100px;
+    }
+    .top-nav ul {
+        background-color:#FFF;
+        flex-direction:column;
+        padding:0;
+    }
+
+    .top-nav ul li {
+        padding: 5px 15px;
+    }
+    .burger-menu {
+        display:flex;
+    }
+    .top-nav.active {
+        display:block;
+    }
+    .top-lang {
+        margin-left:auto;
+    }
+    .logo {
+        max-width: 250px;
+        height: 113px;
+    }
+    .logo img {
+        width: 73%;
+        max-width: 100%;
+        top: 5px;
+        left: 10px;
+    }
+    .logo a {
+        display:block;
+    }
+    .services .c-col {
+        padding:0;
+    }
+    .services_circle-form {
+        padding:0 15px;
+    }
+    .services_circle-additionally {
+        padding:0 15px;
+    }
+    .services_circle {
+        border-radius:15px;
+        padding:15px 0 0;
+    }
+    .consultation .l-col {
+        padding-left:15px;
+    }
+    .consultation .r-col {
+        padding-right:15px;
+    }
+    footer {
+        padding:15px;
+    }
+    .l-col_slider-img img,
+    .r-col_slider-img img {
+        max-width:100%;
+    }
+    .main .l-col_container {
+        max-width:600px;
+        padding-left:15px;
+        padding-top:40px;
+        padding-bottom:30px;
+        padding-right:60px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .main {
+        top:0;
+    }
+    .main .r-col {
+        display:none;
+    }
+    .main .l-col_container {
+        background:#FFF;
+        padding-bottom:0;
+    }
+    .info .row {
+        flex-direction:row;
+    }
+    .info .info-item {
+        width:50%;
+    }
+    .info {
+        padding-top:15px;
+    }
+    .services .l-col, .services .r-col {
+        width:100%;
+    }
+    .services {
+        padding:15px;
+    }
+    .consultation {
+        flex-direction:column;
+    }
+    .consultation .l-col {
+        width:100%;
+        background:#FFF;
+        text-align:center;
+        padding:45px 15px;
+    }
+    .footer_company-info {
+        text-align:center;
+    }
+    .footer_social-list {
+        justify-content: center;
+    }
+    footer .row > div:not(:first-of-type) {
+        margin-left:0;
+    }
+    .l-col_slider .slick-prev, .r-col_slider .slick-prev {
+        background-color:transparent;
+        left:-15px;
+        top:calc(50% - 30px);
+        transform:rotate(-90deg);
+        z-index:5
+    }
+    .l-col_slider .slick-next, .r-col_slider .slick-next {
+        background-color:transparent;
+        right:-15px;
+        top:calc(50% - 30px);
+        transform:rotate(-90deg);
+        z-index:5
+    }
+    .main {
+        background:#FFF;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .main-title {
+        font-size:32px;
+        line-height: 40px;
+    }
+    a.main-btn {
+        padding:10px 15px;
+        width:100%;
+        text-align:center;
+    }
+    .main {
+        background:#FFF;
+        min-height:auto;
+        margin-bottom:15px;
+    }
+    .main .l-col_container {
+        padding-right:15px;
+    }
+    .info-item_title {
+        font-size:18px;
+    }
+    .info-item_description {
+        margin-top:10px;
+    }
+    .info .info-item {
+        padding:10px;
+    }
+    .info .info-item {
+        margin:15px 0;
+    }
+    .services_circle-form input[type="submit"] {
+        font-size:24px;
+    }
+    .services_circle-additionally,
+    .services_circle-additionally .services_circle-additionally-title {
+        font-size:20px;
+    }
+    .l-col_slider li.slick-slide, .r-col_slider li.slick-slide {
+        font-size:20px;
+    }
+    .events-title,
+    .events-description {
+        padding:0 15px;
+    }
+    .consultation_title {
+        font-size:20px;
+        line-height: 25px;
+    }
+    .consultation-list li {
+        padding:2px 0;
+        font-size:18px;
+        line-height: normal;
+    }
+    .services_circle-form input {
+        padding:13px;
+        font-size:18px;
+    }
+    .services_circle .all-categories {
+        font-size:24px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    .services_circle .all-categories {
+        font-size:18px;
+    }
+    .services .c-col {
+        margin:0;
+    }
+    .info-item_title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .info-item_description {
+        font-size:14px;
+        line-height:18px;
+    }
+    .info-item_img img {
+        max-width:100%;
+    }
+    .info {
+        padding-left:0;
+        padding-right:0;
+    }
+    .consultation_title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .consultation .l-col {
+        padding: 15px 15px;
+    }
+    .events-title {
+        font-size: 20px;
+    }
+    .services_circle-title {
+        font-size:20px;
+        line-height:22px;
+    }
+    .services_circle-form input {
+        padding:6px 8px;
+    }
+    .services_circle-form input[type="submit"] {
+        font-size:20px;
+    }
+    .consultation-list li {
+        font-size: 16px;
+    }
+}
